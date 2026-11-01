@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nightwatch Backup — Privacy</title>
+<style>body{max-width:720px;margin:60px auto;padding:0 24px;font:17px/1.7 system-ui;color:#192331}a{color:#245bb4}</style>
+<main><h1>Nightwatch Backup 隐私与数据使用说明</h1><p>更新日期：2026-11-01</p>
+<h2>用途与访问范围</h2><p>本应用仅供账号所有者自用，将运行数据加密备份到其 Google Drive，并在必要时下载、校验和恢复。Google OAuth 只请求 <code>https://www.googleapis.com/auth/drive.file</code>，访问本应用创建或用户明确授权的文件，不请求整个网盘、邮件、联系人或日历。</p>
+<h2>数据与保存</h2><p>备份文件由 Restic 在上传前加密。备份程序处理加密对象及其文件元数据，以完成上传、完整性校验和恢复。OAuth 令牌与客户端凭据保存在所有者控制的服务器受保护文件中；它们不写入公开网页或普通运行日志。备份解密密钥独立保存，不随备份内容上传。</p>
+<h2>使用与共享</h2><p>这些数据仅用于本人备份与恢复，不出售、不用于广告、不共享给其他用户，也不用于训练或改进通用人工智能模型。传输使用加密连接；Google Drive 按其自身服务政策存储加密备份。本公开说明页不包含私人账户或交易数据。</p>
+<h2>保留与撤销</h2><p>备份保留由所有者的配置和存储空间决定。当前程序不自动永久删除远端备份。所有者可在 Google 账号的第三方访问管理中撤销本应用授权，并在 Google Drive 中自行删除备份；撤销授权后自动备份会停止。服务器凭据和本地恢复材料由所有者自行管理。</p>
+<h2>联系与政策</h2><p>问题或删除请求可联系 Google 授权页面显示的应用支持邮箱。对 Google API 数据的使用遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>，包括适用的 Limited Use 要求。</p>
+<p><a href="index.html">返回应用说明</a></p></main></html>
